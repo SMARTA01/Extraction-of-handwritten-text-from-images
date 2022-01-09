@@ -16,8 +16,14 @@ Correct characters predicted : 85.74%
 Correct words predicted : 71.57%
 
 ## Limitation
-There are multiple images in the training set which are not at all legible to the human eye. Removing such images will help in model's learning.
+Image processing technologies are used to transform characters on scanned documents into digital forms, which is known as character recognition.  It tends to work well In machine-printed fonts. However, due of the wide range of human writing styles, it remains challenging for machines to distinguish handwritten characters.
 
 ## Improvements
-"*"More training samples should be used. This will improve the model's ability to learn and generalise. As Kaggle did not provide sufficient storage and computational resources only 30000 images are used for training. 
-"*"The training set contains a number of images that are illegible to the human eye. Removing such images will improve the learning of the model.
+ * More training samples should be used. This will improve the model's ability to learn and generalise. As Kaggle did not provide sufficient storage and computational resources only 30000 images are used for training. 
+ * The training set contains a number of images that are illegible to the human eye. Removing such images will improve the learning of the model.
+
+## References
+ * https://towardsdatascience.com/lstm-based-handwriting-recognition-by-google-eb99663ca6de
+ * https://towardsdatascience.com/a-guide-to-image-captioning-e9fd5517f350
+ * https://towardsdatascience.com/faq-build-a-handwritten-text-recognition-system-using-tensorflow-27648fb18519 
+
