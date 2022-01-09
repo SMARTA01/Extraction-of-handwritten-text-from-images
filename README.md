@@ -31,6 +31,7 @@ This dataset consists of more than four hundred thousand handwritten names colle
 ![image](https://user-images.githubusercontent.com/40299522/148696857-ba9fe2c6-f630-4c86-991a-e1a800ab975e.png)
 
 *Correct characters predicted :* 85.74%
+
 *Correct words predicted :* 71.57%
 
 ## Limitation
