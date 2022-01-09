@@ -4,6 +4,21 @@
 
 One of the most difficult tasks in NLP is handwriting. It's because it can differ from person to person. However, certain characters (for example, English) are very similar. We use contextualized information and lexical matching as a human starting point. While humans have the ability to determine whether it is "O" or "0" from contextualised information, "O" can sometimes be written as "0." For instance, "0" will be used in phone numbers, whereas "O" will be part of an English word. Searching the lexicon is another talent. Even if we don't recognise every single character, it helps us guess words. Here I seek to classify individual words so the word can be converted into a digital form. Firstly, I took a dataset from Kaggle containing around 50000 handwritten words. Then I process and prepare the data for training and in the process, I remove the unreadable images. After processing the data and labels, I made a CRNN model which will use CNN and RNN sequentially. The model was then trained and checked for performance on the validation set. Finally, I took some custom inputs to check and the text was recognized with ease.
 
+## Libraries
+```bash
+import os
+import cv2
+import random
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+import tensorflow as tf
+from keras import backend as K
+from keras.models import Model
+from keras.layers import Input, Conv2D, MaxPooling2D, Reshape, Bidirectional, LSTM, Dense, Lambda, Activation, BatchNormalization, Dropout
+from keras.optimizers import Adam
+```
 ##  Model Architecture 
 ![HTR_Diagram](https://user-images.githubusercontent.com/40299522/148695687-c26d965f-804f-4fde-b2de-b4232dc03a5e.png)
 
