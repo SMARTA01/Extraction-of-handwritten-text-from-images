@@ -27,6 +27,9 @@ from keras.optimizers import Adam
 This dataset consists of more than four hundred thousand handwritten names collected through charity projects. There are 206,799 first names and 207,024 surnames in total. The data was divided into a training set (331,059), testing set (41,382), and validation set (41,382) respectively.
 
 ##  Results
+
+![image](https://user-images.githubusercontent.com/40299522/148696857-ba9fe2c6-f630-4c86-991a-e1a800ab975e.png)
+
 Correct characters predicted : 85.74%
 Correct words predicted : 71.57%
 
